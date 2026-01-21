@@ -79,22 +79,29 @@ UaStatus DSensors::callPoll (
         auto *as = getAddressSpaceLink();
         as->setLtc2990_4e_v0(rep.ltc2990_4e_voltages(0), OpcUa_Good);
         as->setLtc2990_4e_v1(rep.ltc2990_4e_voltages(1), OpcUa_Good);
+        as->setLtc2990_4e_i01((rep.ltc2990_4e_voltages(1)-rep.ltc2990_4e_voltages(0))/0.001, OpcUa_Good);	
         as->setLtc2990_4e_v2(rep.ltc2990_4e_voltages(2), OpcUa_Good);
         as->setLtc2990_4e_v3(rep.ltc2990_4e_voltages(3), OpcUa_Good);
         
         as->setLtc2990_4c_v0(rep.ltc2990_4c_voltages(0), OpcUa_Good);
         as->setLtc2990_4c_v1(rep.ltc2990_4c_voltages(1), OpcUa_Good);
+        as->setLtc2990_4c_i01((rep.ltc2990_4c_voltages(1)-rep.ltc2990_4c_voltages(0))/0.001, OpcUa_Good);	
         as->setLtc2990_4c_v2(rep.ltc2990_4c_voltages(2), OpcUa_Good);
         as->setLtc2990_4c_v3(rep.ltc2990_4c_voltages(3), OpcUa_Good);
+        as->setLtc2990_4c_i23((rep.ltc2990_4c_voltages(3)-rep.ltc2990_4c_voltages(2))/0.001, OpcUa_Good);	
         
         as->setLtc2991_48_v0(rep.ltc2991_48_voltages(0), OpcUa_Good);
         as->setLtc2991_48_v1(rep.ltc2991_48_voltages(1), OpcUa_Good);
+        as->setLtc2991_48_i01((rep.ltc2991_48_voltages(1)-rep.ltc2991_48_voltages(0))/0.001, OpcUa_Good);	
         as->setLtc2991_48_v2(rep.ltc2991_48_voltages(2), OpcUa_Good);
         as->setLtc2991_48_v3(rep.ltc2991_48_voltages(3), OpcUa_Good);
+        as->setLtc2991_48_i23((rep.ltc2991_48_voltages(3)-rep.ltc2991_48_voltages(2))/0.001, OpcUa_Good);	
         as->setLtc2991_48_v4(rep.ltc2991_48_voltages(4), OpcUa_Good);
         as->setLtc2991_48_v5(rep.ltc2991_48_voltages(5), OpcUa_Good);
+        as->setLtc2991_48_i45((rep.ltc2991_48_voltages(5)-rep.ltc2991_48_voltages(4))/0.001, OpcUa_Good);		
         as->setLtc2991_48_v6(rep.ltc2991_48_voltages(6), OpcUa_Good);
         as->setLtc2991_48_v7(rep.ltc2991_48_voltages(7), OpcUa_Good);
+        as->setLtc2991_48_i67((rep.ltc2991_48_voltages(7)-rep.ltc2991_48_voltages(6))/0.001, OpcUa_Good);	
         
         as->setAd7414_49_temp(rep.ad7414_49_temp(), OpcUa_Good);
         as->setAd7414_4d_temp(rep.ad7414_4d_temp(), OpcUa_Good);

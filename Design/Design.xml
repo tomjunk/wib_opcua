@@ -123,6 +123,12 @@
 			<d:documentation>5V (post-sense)</d:documentation>
 		</d:cachevariable>
 		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2990_4e_i01" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>				
+		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2990_4e_v2" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
 			initialStatus="OpcUa_BadWaitingForInitialData">
@@ -147,6 +153,12 @@
 			<d:documentation>1.2V (post-sense)</d:documentation>
 		</d:cachevariable>
 		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2990_4c_i01" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>		
+		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2990_4c_v2" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
 			initialStatus="OpcUa_BadWaitingForInitialData">
@@ -158,6 +170,12 @@
 			initialStatus="OpcUa_BadWaitingForInitialData">
 			<d:documentation>3.3V (post-sense)</d:documentation>
 		</d:cachevariable>
+		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2990_4c_i23" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>		
 		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2991_48_v0" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
@@ -171,6 +189,12 @@
 			<d:documentation>0.85V (post-sense)</d:documentation>
 		</d:cachevariable>
 		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2991_48_i01" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>				
+		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2991_48_v2" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
 			initialStatus="OpcUa_BadWaitingForInitialData">
@@ -182,6 +206,12 @@
 			initialStatus="OpcUa_BadWaitingForInitialData">
 			<d:documentation>0.9V (post-sense)</d:documentation>
 		</d:cachevariable>
+		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2991_48_i23" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>				
 		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2991_48_v4" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
@@ -195,6 +225,12 @@
 			<d:documentation>2.5V (post-sense)</d:documentation>
 		</d:cachevariable>
 		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2991_48_i45" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>						
+		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ltc2991_48_v6" nullPolicy="nullAllowed"
 			addressSpaceWrite="forbidden"
 			initialStatus="OpcUa_BadWaitingForInitialData">
@@ -206,6 +242,12 @@
 			initialStatus="OpcUa_BadWaitingForInitialData">
 			<d:documentation>1.8V (post-sense)</d:documentation>
 		</d:cachevariable>
+		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_Double" name="ltc2991_48_i67" nullPolicy="nullAllowed"
+			addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>0mA (post-sense)</d:documentation>
+		</d:cachevariable>						
 		<d:cachevariable initializeWith="valueAndStatus"
 			dataType="OpcUa_Double" name="ad7414_49_temp"
 			nullPolicy="nullAllowed" addressSpaceWrite="forbidden"
