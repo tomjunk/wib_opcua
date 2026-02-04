@@ -30,6 +30,8 @@
 #include "DRoot.h"
 #include "DWIB.h"
 
+#define WIBMAXCONCURRENTTHREADS 100
+
 QuasarServer::QuasarServer() 
     : BaseQuasarServer()
 {
@@ -53,8 +55,16 @@ void QuasarServer::mainLoop()
         Device::DRoot *root = Device::DRoot::getInstance();
         for (Device::DWIB *wib : root->wibs()) {
             threads.push_back(std::thread(&Device::DWIB::update, wib));
-        }
-        for (auto &t : threads) {
+	    if (threads.size() > WIBMAXCONCURRENTTHREADS)
+	      {
+		//std::cout << "Clearing threads" << std::endl;
+                for (auto &t : threads) {
+        	  t.join();
+	        }
+              threads.clear();
+	      }
+	}
+	for (auto &t : threads) {   // wait for the last batch
         	t.join();
         }
         threads.clear();

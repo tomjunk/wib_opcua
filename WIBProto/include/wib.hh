@@ -14,17 +14,25 @@ public:
     WIB_ZMQ();
     ~WIB_ZMQ();
 
-    void connect(const std::string &zmq_endpoint);
+    void connect();
+
+    void connect_name(const std::string &zmq_endpoint);
 
     void reconnect();
 
+    void disconnect();
+
     template <class R, class C>
     bool send_command(const C &msg, R &repl, int timeout_ms = -1) {
-    	// EG: with a REQ/REP pattern, after a socket.send, the next allowed operation is a socket.recv.
+
+        // EG: with a REQ/REP pattern, after a socket.send, the next allowed operation is a socket.recv.
     	// In case the zmq_poll returns false, the method is returned, therefore a recv operation is not performed.
     	// This will cause socket.send to raise an exception at the next method call.
     	// Unrecoverable unless the recv is successful in the next iteration or FSM is reset by reconnecting socket:
     	// https://stackoverflow.com/questions/26915347/zeromq-reset-req-rep-socket-state
+
+        // trj -- change model to connect on each messgae and disconnect after we are done
+	connect();
 
         wib::Command command;
         command.mutable_cmd()->PackFrom(msg);
@@ -38,7 +46,8 @@ public:
 
         if (zmq_poll(&m_poller, 1, timeout_ms) <= 0) {
             std::cout << "poll failed for endpoint " << m_zmq_endpoint << " Reconnecting socket" << std::endl;
-            this->reconnect();
+            //this->reconnect();
+	    disconnect();
             return false;
         }
 
@@ -48,6 +57,8 @@ public:
         std::string reply_str(static_cast<char*>(reply.data()), reply.size());
         repl.ParseFromString(reply_str);
 
+	disconnect();
+	
         return true;
     }
     

@@ -59,8 +59,8 @@ DWIB::DWIB (
 ):
     Base_DWIB( config, parent)
 {
-    LOG(Log::INF) << "Connecting to WIB at " << config.zmq_endpoint();
-    wib.connect(config.zmq_endpoint());
+    LOG(Log::INF) << "Registering WIB connection name at " << config.zmq_endpoint();
+    wib.connect_name(config.zmq_endpoint());
 
 }
 
