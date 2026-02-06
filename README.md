@@ -20,7 +20,7 @@ for more information.
 https://github.com/quasar-team/quasar/blob/master/Documentation/source/quasar.rst
 
 ## WIB
-`sudo dnf install -y protobuf protobuf-compiler protobuf-devel cpp-zmq-devel`
+`sudo dnf install -y protobuf protobuf-compiler protobuf-devel cppzmq-devel`
 
 ### Generate cpp protobuf file
 ```
