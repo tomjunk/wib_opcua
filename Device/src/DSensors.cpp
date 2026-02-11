@@ -15,7 +15,7 @@
     along with Quasar.  If not, see <http://www.gnu.org/licenses/>.
 
 
- */
+*/
 
 
 #include <Configuration.hxx> // TODO; should go away, is already in Base class for ages
@@ -26,82 +26,84 @@
 
 namespace Device
 {
-// 1111111111111111111111111111111111111111111111111111111111111111111111111
-// 1     GENERATED CODE STARTS HERE AND FINISHES AT SECTION 2              1
-// 1     Users don't modify this code!!!!                                  1
-// 1     If you modify this code you may start a fire or a flood somewhere,1
-// 1     and some human being may possible cease to exist. You don't want  1
-// 1     to be charged with that!                                          1
-// 1111111111111111111111111111111111111111111111111111111111111111111111111
+  // 1111111111111111111111111111111111111111111111111111111111111111111111111
+  // 1     GENERATED CODE STARTS HERE AND FINISHES AT SECTION 2              1
+  // 1     Users don't modify this code!!!!                                  1
+  // 1     If you modify this code you may start a fire or a flood somewhere,1
+  // 1     and some human being may possible cease to exist. You don't want  1
+  // 1     to be charged with that!                                          1
+  // 1111111111111111111111111111111111111111111111111111111111111111111111111
 
 
 
 
 
 
-// 2222222222222222222222222222222222222222222222222222222222222222222222222
-// 2     SEMI CUSTOM CODE STARTS HERE AND FINISHES AT SECTION 3            2
-// 2     (code for which only stubs were generated automatically)          2
-// 2     You should add the implementation but dont alter the headers      2
-// 2     (apart from constructor, in which you should complete initializati2
-// 2     on list)                                                          2
-// 2222222222222222222222222222222222222222222222222222222222222222222222222
+  // 2222222222222222222222222222222222222222222222222222222222222222222222222
+  // 2     SEMI CUSTOM CODE STARTS HERE AND FINISHES AT SECTION 3            2
+  // 2     (code for which only stubs were generated automatically)          2
+  // 2     You should add the implementation but dont alter the headers      2
+  // 2     (apart from constructor, in which you should complete initializati2
+  // 2     on list)                                                          2
+  // 2222222222222222222222222222222222222222222222222222222222222222222222222
 
-/* sample ctr */
-DSensors::DSensors (
-    const Configuration::Sensors& config,
-    Parent_DSensors* parent
-):
+  /* sample ctr */
+  DSensors::DSensors (
+                      const Configuration::Sensors& config,
+                      Parent_DSensors* parent
+                      ):
     Base_DSensors( config, parent)
 
     /* fill up constructor initialization list here */
-{
+  {
     /* fill up constructor body here */
-}
+  }
 
-/* sample dtr */
-DSensors::~DSensors ()
-{
-}
+  /* sample dtr */
+  DSensors::~DSensors ()
+  {
+  }
 
-/* delegates for cachevariables */
+  /* delegates for cachevariables */
 
 
 
-/* delegators for methods */
-UaStatus DSensors::callPoll (
-    OpcUa_Boolean& success
-)
-{
-    wib::GetSensors req;
-    wib::GetSensors::Sensors rep;
-    if (getParent()->wib.send_command(req,rep,10000)) {
+  /* delegators for methods */
+  UaStatus DSensors::callPoll (
+                               OpcUa_Boolean& success
+                               )
+  {
+    success = true;
+    {
+      wib::GetSensors req;
+      wib::GetSensors::Sensors rep;
+      if (getParent()->wib.send_command(req,rep,10000)) {
         auto *as = getAddressSpaceLink();
         as->setLtc2990_4e_v0(rep.ltc2990_4e_voltages(0), OpcUa_Good);
         as->setLtc2990_4e_v1(rep.ltc2990_4e_voltages(1), OpcUa_Good);
-        as->setLtc2990_4e_i01((rep.ltc2990_4e_voltages(1)-rep.ltc2990_4e_voltages(0))/0.001, OpcUa_Good);	
+        as->setLtc2990_4e_i01((rep.ltc2990_4e_voltages(1)-rep.ltc2990_4e_voltages(0))/0.001, OpcUa_Good);       
         as->setLtc2990_4e_v2(rep.ltc2990_4e_voltages(2), OpcUa_Good);
         as->setLtc2990_4e_v3(rep.ltc2990_4e_voltages(3), OpcUa_Good);
         
         as->setLtc2990_4c_v0(rep.ltc2990_4c_voltages(0), OpcUa_Good);
         as->setLtc2990_4c_v1(rep.ltc2990_4c_voltages(1), OpcUa_Good);
-        as->setLtc2990_4c_i01((rep.ltc2990_4c_voltages(1)-rep.ltc2990_4c_voltages(0))/0.001, OpcUa_Good);	
+        as->setLtc2990_4c_i01((rep.ltc2990_4c_voltages(1)-rep.ltc2990_4c_voltages(0))/0.001, OpcUa_Good);       
         as->setLtc2990_4c_v2(rep.ltc2990_4c_voltages(2), OpcUa_Good);
         as->setLtc2990_4c_v3(rep.ltc2990_4c_voltages(3), OpcUa_Good);
-        as->setLtc2990_4c_i23((rep.ltc2990_4c_voltages(3)-rep.ltc2990_4c_voltages(2))/0.001, OpcUa_Good);	
+        as->setLtc2990_4c_i23((rep.ltc2990_4c_voltages(3)-rep.ltc2990_4c_voltages(2))/0.001, OpcUa_Good);       
         
         as->setLtc2991_48_v0(rep.ltc2991_48_voltages(0), OpcUa_Good);
         as->setLtc2991_48_v1(rep.ltc2991_48_voltages(1), OpcUa_Good);
-        as->setLtc2991_48_i01((rep.ltc2991_48_voltages(1)-rep.ltc2991_48_voltages(0))/0.001, OpcUa_Good);	
+        as->setLtc2991_48_i01((rep.ltc2991_48_voltages(1)-rep.ltc2991_48_voltages(0))/0.001, OpcUa_Good);       
         as->setLtc2991_48_v2(rep.ltc2991_48_voltages(2), OpcUa_Good);
         as->setLtc2991_48_v3(rep.ltc2991_48_voltages(3), OpcUa_Good);
-        as->setLtc2991_48_i23((rep.ltc2991_48_voltages(3)-rep.ltc2991_48_voltages(2))/0.001, OpcUa_Good);	
+        as->setLtc2991_48_i23((rep.ltc2991_48_voltages(3)-rep.ltc2991_48_voltages(2))/0.001, OpcUa_Good);       
         as->setLtc2991_48_v4(rep.ltc2991_48_voltages(4), OpcUa_Good);
         as->setLtc2991_48_v5(rep.ltc2991_48_voltages(5), OpcUa_Good);
-        as->setLtc2991_48_i45((rep.ltc2991_48_voltages(5)-rep.ltc2991_48_voltages(4))/0.001, OpcUa_Good);		
+        as->setLtc2991_48_i45((rep.ltc2991_48_voltages(5)-rep.ltc2991_48_voltages(4))/0.001, OpcUa_Good);               
         as->setLtc2991_48_v6(rep.ltc2991_48_voltages(6), OpcUa_Good);
         as->setLtc2991_48_v7(rep.ltc2991_48_voltages(7), OpcUa_Good);
-        as->setLtc2991_48_i67((rep.ltc2991_48_voltages(7)-rep.ltc2991_48_voltages(6))/0.001, OpcUa_Good);	
+        as->setLtc2991_48_i67((rep.ltc2991_48_voltages(7)-rep.ltc2991_48_voltages(6))/0.001, OpcUa_Good);       
         
         as->setAd7414_49_temp(rep.ad7414_49_temp(), OpcUa_Good);
         as->setAd7414_4d_temp(rep.ad7414_4d_temp(), OpcUa_Good);
@@ -176,24 +178,45 @@ UaStatus DSensors::callPoll (
         as->setFemb_bias_ltc2991_v4(rep.femb_bias_ltc2991_voltages(4), OpcUa_Good);
         as->setFemb_bias_ltc2991_v5(rep.femb_bias_ltc2991_voltages(5), OpcUa_Good);
         as->setFemb_bias_ltc2991_v6(rep.femb_bias_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v7(rep.femb_bias_ltc2991_voltages(7), OpcUa_Good);
-        
-        success = true;
-        return OpcUa_Good;
-    } else {
-        return OpcUa_Bad;
+        as->setFemb_bias_ltc2991_v7(rep.femb_bias_ltc2991_voltages(7), OpcUa_Good);        
+      } else {
+        success = false;
+      }
     }
-}
 
-// 3333333333333333333333333333333333333333333333333333333333333333333333333
-// 3     FULLY CUSTOM CODE STARTS HERE                                     3
-// 3     Below you put bodies for custom methods defined for this class.   3
-// 3     You can do whatever you want, but please be decent.               3
-// 3333333333333333333333333333333333333333333333333333333333333333333333333
+    // add in peeks for status registers
+    {
+      wib::Peek req;
+      req.set_addr(0xA00C00B8);
+      wib::RegValue rep;
 
-void DSensors::update() {
+      if (getParent()->wib.send_command(req,rep,10000)) {
+        auto *as = getAddressSpaceLink();
+        as->setCRC_Status_Register(rep.value(), OpcUa_Good);
+      } else {
+        success = false;
+      }
+    }
+    
+    if (success)
+      {
+        return OpcUa_Good;
+      }
+    else
+      {
+        return OpcUa_Bad;
+      }
+  }
+
+  // 3333333333333333333333333333333333333333333333333333333333333333333333333
+  // 3     FULLY CUSTOM CODE STARTS HERE                                     3
+  // 3     Below you put bodies for custom methods defined for this class.   3
+  // 3     You can do whatever you want, but please be decent.               3
+  // 3333333333333333333333333333333333333333333333333333333333333333333333333
+
+  void DSensors::update() {
     OpcUa_Boolean success;
     callPoll(success);
-}
+  }
 
 }

@@ -748,6 +748,15 @@
 				FEMB3 Bias 5V (post-sense)
 			</d:documentation>
 		</d:cachevariable>
+		<d:cachevariable initializeWith="valueAndStatus"
+			dataType="OpcUa_UInt32" name="CRC_Status_Register"
+			nullPolicy="nullAllowed" addressSpaceWrite="forbidden"
+			initialStatus="OpcUa_BadWaitingForInitialData">
+			<d:documentation>
+				CRC Status bits -- sticky
+			</d:documentation>
+		</d:cachevariable>
+
 		<d:method name="poll" executionSynchronicity="synchronous">
 			<d:returnvalue dataType="OpcUa_Boolean" name="success"></d:returnvalue>
 			<d:documentation>
@@ -755,7 +764,7 @@
 			</d:documentation>
 		</d:method>
 
-		<d:documentation>Read the onboard WIB sensors</d:documentation>
+		<d:documentation>Read the onboard WIB sensors.  Include status registers here too</d:documentation>
 	</d:class>
 
 	<d:class name="TimingEndpoint">
