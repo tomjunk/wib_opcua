@@ -1,15 +1,1308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration xmlns="http://cern.ch/quasar/Configuration" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cern.ch/quasar/Configuration ../Configuration/Configuration.xsd ">
-	<WIB zmq_endpoint="tcp://np04-wib-101:1234" name="wib"
-		poll_period="0">
-		<FEMBPower name="power" ldo_a1_setpoint="2.5"
-			ldo_a0_setpoint="2.5" dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
-			dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0" cold="false"
-			femb0_on="false" femb1_on="false" femb2_on="false" femb3_on="false"
-			stage="0">
-		</FEMBPower>
-		<Sensors name="sensors" poll_period="0"></Sensors>
-		<TimingEndpoint name="timing" poll_period="0"></TimingEndpoint>
-	</WIB>
-
+    <WIB zmq_endpoint="tcp://localhost:39500" name="wib_1" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39501" name="wib_2" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39502" name="wib_3" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39503" name="wib_4" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39504" name="wib_5" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39505" name="wib_6" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39506" name="wib_7" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39507" name="wib_8" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39508" name="wib_9" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39509" name="wib_10" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39510" name="wib_11" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39511" name="wib_12" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39512" name="wib_13" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39513" name="wib_14" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39514" name="wib_15" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39515" name="wib_16" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39516" name="wib_17" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39517" name="wib_18" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39518" name="wib_19" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39519" name="wib_20" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39520" name="wib_21" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39521" name="wib_22" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39522" name="wib_23" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39523" name="wib_24" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39524" name="wib_25" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39525" name="wib_26" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39526" name="wib_27" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39527" name="wib_28" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39528" name="wib_29" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39529" name="wib_30" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39530" name="wib_31" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39531" name="wib_32" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39532" name="wib_33" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39533" name="wib_34" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39534" name="wib_35" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39535" name="wib_36" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39536" name="wib_37" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39537" name="wib_38" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39538" name="wib_39" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39539" name="wib_40" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39540" name="wib_41" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39541" name="wib_42" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39542" name="wib_43" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39543" name="wib_44" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39544" name="wib_45" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39545" name="wib_46" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39546" name="wib_47" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39547" name="wib_48" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39548" name="wib_49" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39549" name="wib_50" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39550" name="wib_51" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39551" name="wib_52" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39552" name="wib_53" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39553" name="wib_54" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39554" name="wib_55" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39555" name="wib_56" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39556" name="wib_57" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39557" name="wib_58" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39558" name="wib_59" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39559" name="wib_60" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39560" name="wib_61" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39561" name="wib_62" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39562" name="wib_63" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39563" name="wib_64" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39564" name="wib_65" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39565" name="wib_66" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39566" name="wib_67" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39567" name="wib_68" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39568" name="wib_69" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39569" name="wib_70" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39570" name="wib_71" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39571" name="wib_72" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39572" name="wib_73" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39573" name="wib_74" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39574" name="wib_75" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39575" name="wib_76" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39576" name="wib_77" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39577" name="wib_78" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39578" name="wib_79" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39579" name="wib_80" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39580" name="wib_81" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39581" name="wib_82" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39582" name="wib_83" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39583" name="wib_84" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39584" name="wib_85" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39585" name="wib_86" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39586" name="wib_87" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39587" name="wib_88" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39588" name="wib_89" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39589" name="wib_90" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39590" name="wib_91" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39591" name="wib_92" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39592" name="wib_93" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39593" name="wib_94" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39594" name="wib_95" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39595" name="wib_96" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39596" name="wib_97" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39597" name="wib_98" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39598" name="wib_99" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39599" name="wib_100" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39600" name="wib_101" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39601" name="wib_102" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39602" name="wib_103" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39603" name="wib_104" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39604" name="wib_105" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39605" name="wib_106" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39606" name="wib_107" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39607" name="wib_108" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39608" name="wib_109" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39609" name="wib_110" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39610" name="wib_111" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39611" name="wib_112" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39612" name="wib_113" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39613" name="wib_114" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39614" name="wib_115" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39615" name="wib_116" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39616" name="wib_117" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39617" name="wib_118" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39618" name="wib_119" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39619" name="wib_120" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39620" name="wib_121" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39621" name="wib_122" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39622" name="wib_123" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39623" name="wib_124" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39624" name="wib_125" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39625" name="wib_126" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39626" name="wib_127" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39627" name="wib_128" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39628" name="wib_129" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39629" name="wib_130" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39630" name="wib_131" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39631" name="wib_132" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39632" name="wib_133" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39633" name="wib_134" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39634" name="wib_135" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39635" name="wib_136" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39636" name="wib_137" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39637" name="wib_138" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39638" name="wib_139" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39639" name="wib_140" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39640" name="wib_141" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39641" name="wib_142" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39642" name="wib_143" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39643" name="wib_144" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
+    <WIB zmq_endpoint="tcp://localhost:39644" name="wib_145" poll_period="1">
+        <FEMBPower name="power" ldo_a1_setpoint="2.5" ldo_a0_setpoint="2.5"
+                   dc2dc_o1_setpoint="4.0" dc2dc_o2_setpoint="4.0"
+                   dc2dc_o3_setpoint="4.0" dc2dc_o4_setpoint="4.0"
+                   cold="false" femb0_on="false" femb1_on="false"
+                   femb2_on="false" femb3_on="false" stage="0"/>
+        <Sensors name="sensors"/>
+        <TimingEndpoint name="timing"/>
+    </WIB>
 </configuration>

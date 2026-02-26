@@ -77,111 +77,116 @@ namespace Device
     {
       wib::GetSensors req;
       wib::GetSensors::Sensors rep;
+      auto opcstatus = OpcUa_Good;
       if (getParent()->wib.send_command(req,rep,10000)) {
-        auto *as = getAddressSpaceLink();
-        as->setLtc2990_4e_v0(rep.ltc2990_4e_voltages(0), OpcUa_Good);
-        as->setLtc2990_4e_v1(rep.ltc2990_4e_voltages(1), OpcUa_Good);
-        as->setLtc2990_4e_i01((rep.ltc2990_4e_voltages(1)-rep.ltc2990_4e_voltages(0))/0.001, OpcUa_Good);       
-        as->setLtc2990_4e_v2(rep.ltc2990_4e_voltages(2), OpcUa_Good);
-        as->setLtc2990_4e_v3(rep.ltc2990_4e_voltages(3), OpcUa_Good);
-        
-        as->setLtc2990_4c_v0(rep.ltc2990_4c_voltages(0), OpcUa_Good);
-        as->setLtc2990_4c_v1(rep.ltc2990_4c_voltages(1), OpcUa_Good);
-        as->setLtc2990_4c_i01((rep.ltc2990_4c_voltages(1)-rep.ltc2990_4c_voltages(0))/0.001, OpcUa_Good);       
-        as->setLtc2990_4c_v2(rep.ltc2990_4c_voltages(2), OpcUa_Good);
-        as->setLtc2990_4c_v3(rep.ltc2990_4c_voltages(3), OpcUa_Good);
-        as->setLtc2990_4c_i23((rep.ltc2990_4c_voltages(3)-rep.ltc2990_4c_voltages(2))/0.001, OpcUa_Good);       
-        
-        as->setLtc2991_48_v0(rep.ltc2991_48_voltages(0), OpcUa_Good);
-        as->setLtc2991_48_v1(rep.ltc2991_48_voltages(1), OpcUa_Good);
-        as->setLtc2991_48_i01((rep.ltc2991_48_voltages(1)-rep.ltc2991_48_voltages(0))/0.001, OpcUa_Good);       
-        as->setLtc2991_48_v2(rep.ltc2991_48_voltages(2), OpcUa_Good);
-        as->setLtc2991_48_v3(rep.ltc2991_48_voltages(3), OpcUa_Good);
-        as->setLtc2991_48_i23((rep.ltc2991_48_voltages(3)-rep.ltc2991_48_voltages(2))/0.001, OpcUa_Good);       
-        as->setLtc2991_48_v4(rep.ltc2991_48_voltages(4), OpcUa_Good);
-        as->setLtc2991_48_v5(rep.ltc2991_48_voltages(5), OpcUa_Good);
-        as->setLtc2991_48_i45((rep.ltc2991_48_voltages(5)-rep.ltc2991_48_voltages(4))/0.001, OpcUa_Good);               
-        as->setLtc2991_48_v6(rep.ltc2991_48_voltages(6), OpcUa_Good);
-        as->setLtc2991_48_v7(rep.ltc2991_48_voltages(7), OpcUa_Good);
-        as->setLtc2991_48_i67((rep.ltc2991_48_voltages(7)-rep.ltc2991_48_voltages(6))/0.001, OpcUa_Good);       
-        
-        as->setAd7414_49_temp(rep.ad7414_49_temp(), OpcUa_Good);
-        as->setAd7414_4d_temp(rep.ad7414_4d_temp(), OpcUa_Good);
-        as->setAd7414_4a_temp(rep.ad7414_4a_temp(), OpcUa_Good);
-        
-        as->setLtc2499_15_temp0(rep.ltc2499_15_temps(0), OpcUa_Good);
-        as->setLtc2499_15_temp1(rep.ltc2499_15_temps(1), OpcUa_Good);
-        as->setLtc2499_15_temp2(rep.ltc2499_15_temps(2), OpcUa_Good);
-        as->setLtc2499_15_temp3(rep.ltc2499_15_temps(3), OpcUa_Good);
-        as->setLtc2499_15_temp4(rep.ltc2499_15_temps(4), OpcUa_Good);
-        as->setLtc2499_15_temp5(rep.ltc2499_15_temps(5), OpcUa_Good);
-        as->setLtc2499_15_temp6(rep.ltc2499_15_temps(6), OpcUa_Good);
-        
-        as->setFemb0_dc2dc_ltc2991_v0(rep.femb0_dc2dc_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v1(rep.femb0_dc2dc_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v2(rep.femb0_dc2dc_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v3(rep.femb0_dc2dc_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v4(rep.femb0_dc2dc_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v5(rep.femb0_dc2dc_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v6(rep.femb0_dc2dc_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb0_dc2dc_ltc2991_v7(rep.femb0_dc2dc_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb1_dc2dc_ltc2991_v0(rep.femb1_dc2dc_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v1(rep.femb1_dc2dc_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v2(rep.femb1_dc2dc_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v3(rep.femb1_dc2dc_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v4(rep.femb1_dc2dc_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v5(rep.femb1_dc2dc_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v6(rep.femb1_dc2dc_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb1_dc2dc_ltc2991_v7(rep.femb1_dc2dc_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb2_dc2dc_ltc2991_v0(rep.femb2_dc2dc_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v1(rep.femb2_dc2dc_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v2(rep.femb2_dc2dc_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v3(rep.femb2_dc2dc_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v4(rep.femb2_dc2dc_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v5(rep.femb2_dc2dc_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v6(rep.femb2_dc2dc_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb2_dc2dc_ltc2991_v7(rep.femb2_dc2dc_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb3_dc2dc_ltc2991_v0(rep.femb3_dc2dc_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v1(rep.femb3_dc2dc_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v2(rep.femb3_dc2dc_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v3(rep.femb3_dc2dc_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v4(rep.femb3_dc2dc_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v5(rep.femb3_dc2dc_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v6(rep.femb3_dc2dc_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb3_dc2dc_ltc2991_v7(rep.femb3_dc2dc_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb_ldo_a0_ltc2991_v0(rep.femb_ldo_a0_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v1(rep.femb_ldo_a0_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v2(rep.femb_ldo_a0_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v3(rep.femb_ldo_a0_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v4(rep.femb_ldo_a0_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v5(rep.femb_ldo_a0_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v6(rep.femb_ldo_a0_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb_ldo_a0_ltc2991_v7(rep.femb_ldo_a0_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb_ldo_a1_ltc2991_v0(rep.femb_ldo_a1_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v1(rep.femb_ldo_a1_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v2(rep.femb_ldo_a1_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v3(rep.femb_ldo_a1_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v4(rep.femb_ldo_a1_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v5(rep.femb_ldo_a1_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v6(rep.femb_ldo_a1_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb_ldo_a1_ltc2991_v7(rep.femb_ldo_a1_ltc2991_voltages(7), OpcUa_Good);
-        
-        as->setFemb_bias_ltc2991_v0(rep.femb_bias_ltc2991_voltages(0), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v1(rep.femb_bias_ltc2991_voltages(1), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v2(rep.femb_bias_ltc2991_voltages(2), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v3(rep.femb_bias_ltc2991_voltages(3), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v4(rep.femb_bias_ltc2991_voltages(4), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v5(rep.femb_bias_ltc2991_voltages(5), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v6(rep.femb_bias_ltc2991_voltages(6), OpcUa_Good);
-        as->setFemb_bias_ltc2991_v7(rep.femb_bias_ltc2991_voltages(7), OpcUa_Good);        
+	success = true;
+	opcstatus = OpcUa_Good;
       } else {
         success = false;
+	opcstatus = OpcUa_Bad;
       }
+      
+      auto *as = getAddressSpaceLink();
+      as->setLtc2990_4e_v0(!success ? 0 : rep.ltc2990_4e_voltages(0), opcstatus);
+      as->setLtc2990_4e_v1(!success ? 0 : rep.ltc2990_4e_voltages(1), opcstatus);
+      as->setLtc2990_4e_i01(!success ? 0 : (rep.ltc2990_4e_voltages(1)-rep.ltc2990_4e_voltages(0))/0.001, opcstatus);       
+      as->setLtc2990_4e_v2(!success ? 0 : rep.ltc2990_4e_voltages(2), opcstatus);
+      as->setLtc2990_4e_v3(!success ? 0 : rep.ltc2990_4e_voltages(3), opcstatus);
+        
+      as->setLtc2990_4c_v0(!success ? 0 : rep.ltc2990_4c_voltages(0), opcstatus);
+      as->setLtc2990_4c_v1(!success ? 0 : rep.ltc2990_4c_voltages(1), opcstatus);
+      as->setLtc2990_4c_i01(!success ? 0 : (rep.ltc2990_4c_voltages(1)-rep.ltc2990_4c_voltages(0))/0.001, opcstatus);       
+      as->setLtc2990_4c_v2(!success ? 0 : rep.ltc2990_4c_voltages(2), opcstatus);
+      as->setLtc2990_4c_v3(!success ? 0 : rep.ltc2990_4c_voltages(3), opcstatus);
+      as->setLtc2990_4c_i23(!success ? 0 : (rep.ltc2990_4c_voltages(3)-rep.ltc2990_4c_voltages(2))/0.001, opcstatus);       
+        
+      as->setLtc2991_48_v0(!success ? 0 : rep.ltc2991_48_voltages(0), opcstatus);
+      as->setLtc2991_48_v1(!success ? 0 : rep.ltc2991_48_voltages(1), opcstatus);
+      as->setLtc2991_48_i01(!success ? 0 : (rep.ltc2991_48_voltages(1)-rep.ltc2991_48_voltages(0))/0.001, opcstatus);       
+      as->setLtc2991_48_v2(!success ? 0 : rep.ltc2991_48_voltages(2), opcstatus);
+      as->setLtc2991_48_v3(!success ? 0 : rep.ltc2991_48_voltages(3), opcstatus);
+      as->setLtc2991_48_i23(!success ? 0 : (rep.ltc2991_48_voltages(3)-rep.ltc2991_48_voltages(2))/0.001, opcstatus);       
+      as->setLtc2991_48_v4(!success ? 0 : rep.ltc2991_48_voltages(4), opcstatus);
+      as->setLtc2991_48_v5(!success ? 0 : rep.ltc2991_48_voltages(5), opcstatus);
+      as->setLtc2991_48_i45(!success ? 0 : (rep.ltc2991_48_voltages(5)-rep.ltc2991_48_voltages(4))/0.001, opcstatus);               
+      as->setLtc2991_48_v6(!success ? 0 : rep.ltc2991_48_voltages(6), opcstatus);
+      as->setLtc2991_48_v7(!success ? 0 : rep.ltc2991_48_voltages(7), opcstatus);
+      as->setLtc2991_48_i67(!success ? 0 : (rep.ltc2991_48_voltages(7)-rep.ltc2991_48_voltages(6))/0.001, opcstatus);       
+        
+      as->setAd7414_49_temp(!success ? 0 : rep.ad7414_49_temp(), opcstatus);
+      as->setAd7414_4d_temp(!success ? 0 : rep.ad7414_4d_temp(), opcstatus);
+      as->setAd7414_4a_temp(!success ? 0 : rep.ad7414_4a_temp(), opcstatus);
+        
+      as->setLtc2499_15_temp0(!success ? 0 : rep.ltc2499_15_temps(0), opcstatus);
+      as->setLtc2499_15_temp1(!success ? 0 : rep.ltc2499_15_temps(1), opcstatus);
+      as->setLtc2499_15_temp2(!success ? 0 : rep.ltc2499_15_temps(2), opcstatus);
+      as->setLtc2499_15_temp3(!success ? 0 : rep.ltc2499_15_temps(3), opcstatus);
+      as->setLtc2499_15_temp4(!success ? 0 : rep.ltc2499_15_temps(4), opcstatus);
+      as->setLtc2499_15_temp5(!success ? 0 : rep.ltc2499_15_temps(5), opcstatus);
+      as->setLtc2499_15_temp6(!success ? 0 : rep.ltc2499_15_temps(6), opcstatus);
+        
+      as->setFemb0_dc2dc_ltc2991_v0(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(0), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v1(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(1), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v2(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(2), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v3(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(3), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v4(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(4), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v5(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(5), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v6(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(6), opcstatus);
+      as->setFemb0_dc2dc_ltc2991_v7(!success ? 0 : rep.femb0_dc2dc_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb1_dc2dc_ltc2991_v0(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(0), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v1(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(1), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v2(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(2), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v3(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(3), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v4(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(4), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v5(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(5), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v6(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(6), opcstatus);
+      as->setFemb1_dc2dc_ltc2991_v7(!success ? 0 : rep.femb1_dc2dc_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb2_dc2dc_ltc2991_v0(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(0), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v1(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(1), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v2(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(2), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v3(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(3), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v4(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(4), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v5(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(5), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v6(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(6), opcstatus);
+      as->setFemb2_dc2dc_ltc2991_v7(!success ? 0 : rep.femb2_dc2dc_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb3_dc2dc_ltc2991_v0(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(0), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v1(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(1), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v2(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(2), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v3(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(3), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v4(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(4), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v5(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(5), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v6(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(6), opcstatus);
+      as->setFemb3_dc2dc_ltc2991_v7(!success ? 0 : rep.femb3_dc2dc_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb_ldo_a0_ltc2991_v0(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(0), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v1(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(1), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v2(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(2), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v3(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(3), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v4(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(4), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v5(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(5), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v6(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(6), opcstatus);
+      as->setFemb_ldo_a0_ltc2991_v7(!success ? 0 : rep.femb_ldo_a0_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb_ldo_a1_ltc2991_v0(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(0), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v1(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(1), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v2(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(2), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v3(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(3), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v4(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(4), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v5(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(5), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v6(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(6), opcstatus);
+      as->setFemb_ldo_a1_ltc2991_v7(!success ? 0 : rep.femb_ldo_a1_ltc2991_voltages(7), opcstatus);
+        
+      as->setFemb_bias_ltc2991_v0(!success ? 0 : rep.femb_bias_ltc2991_voltages(0), opcstatus);
+      as->setFemb_bias_ltc2991_v1(!success ? 0 : rep.femb_bias_ltc2991_voltages(1), opcstatus);
+      as->setFemb_bias_ltc2991_v2(!success ? 0 : rep.femb_bias_ltc2991_voltages(2), opcstatus);
+      as->setFemb_bias_ltc2991_v3(!success ? 0 : rep.femb_bias_ltc2991_voltages(3), opcstatus);
+      as->setFemb_bias_ltc2991_v4(!success ? 0 : rep.femb_bias_ltc2991_voltages(4), opcstatus);
+      as->setFemb_bias_ltc2991_v5(!success ? 0 : rep.femb_bias_ltc2991_voltages(5), opcstatus);
+      as->setFemb_bias_ltc2991_v6(!success ? 0 : rep.femb_bias_ltc2991_voltages(6), opcstatus);
+      as->setFemb_bias_ltc2991_v7(!success ? 0 : rep.femb_bias_ltc2991_voltages(7), opcstatus);        
     }
 
     // add in peeks for status registers
@@ -189,11 +194,11 @@ namespace Device
       wib::Peek req;
       req.set_addr(0xA00C00B8);
       wib::RegValue rep;
-
+      auto *as = getAddressSpaceLink();
       if (getParent()->wib.send_command(req,rep,10000)) {
-        auto *as = getAddressSpaceLink();
         as->setCRC_Status_Register(rep.value(), OpcUa_Good);
       } else {
+        as->setCRC_Status_Register(0, OpcUa_Bad);
         success = false;
       }
     }

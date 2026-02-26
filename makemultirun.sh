@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ..
 touch multirun
 rm -rf multirun
 mkdir multirun

@@ -31,7 +31,7 @@ public:
     	// Unrecoverable unless the recv is successful in the next iteration or FSM is reset by reconnecting socket:
     	// https://stackoverflow.com/questions/26915347/zeromq-reset-req-rep-socket-state
 
-        // trj -- change model to connect on each messgae and disconnect after we are done
+        // trj -- change model to connect on each message and disconnect after we are done
 	connect();
 
         wib::Command command;
